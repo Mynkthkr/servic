@@ -1,6 +1,8 @@
 FROM openjdk:10-jre-slim
 
 WORKDIR /app
+COPY ./ ./
+
 COPY ./target/Service_A-0.0.1-SNAPSHOT.jar /app
 
 EXPOSE 8080
